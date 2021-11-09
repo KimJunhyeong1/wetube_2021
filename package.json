@@ -2,13 +2,13 @@
   "name": "wetube",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "srd/index.js",
   "scripts": {
     "dev": "nodemon --exec babel-node index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KimJunhyeong1/wetube_2021.git"
+    "url": "git+https://github.com/KimJunhyeong1/wetube_2021.git "
   },
   "author": "Junbro",
   "license": "MIT",
