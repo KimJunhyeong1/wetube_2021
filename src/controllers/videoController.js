@@ -1,13 +1,13 @@
 export const see = (request, response) => {
-  response.render("watch");
+  response.render("watch", { pageTitle: "Watch" });
 };
 
 export const trending = (request, response) => {
-  response.render("home");
+  response.render("home", { pageTitle: "Home" });
 };
 
 export const edit = (request, response) => {
-  response.render("edit");
+  response.render("edit", { pageTitle: "Edit" });
 };
 
 export const search = (request, response) => {
