@@ -1,4 +1,4 @@
-import express from "express";
+import express, { urlencoded } from "express";
 import morgan from "morgan";
 import globalRouter from "./routers/globalRouter.js";
 import userRouter from "./routers/userRouter.js";
@@ -12,6 +12,7 @@ const loggerMiddleware = morgan("dev");
 app.set("view engine", "pug");
 app.set("views", process.cwd() + "/src/views");
 app.use(loggerMiddleware);
+app.use(urlencoded({ extended: true }));
 app.use("/", globalRouter);
 app.use("/users", userRouter);
 app.use("/videos", videoRouter);
